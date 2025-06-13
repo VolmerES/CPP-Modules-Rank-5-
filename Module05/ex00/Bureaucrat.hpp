@@ -6,7 +6,7 @@
 /*   By: volmer <volmer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 12:04:13 by volmer            #+#    #+#             */
-/*   Updated: 2025/06/13 13:53:57 by volmer           ###   ########.fr       */
+/*   Updated: 2025/06/13 14:11:49 by volmer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ class Bureaucrat {
 		std::string const&	getName() const;
 		int					getGrade() const;
 
-		void	IncrementGrade(void);
-		void	DecrementGrade(void);
+		void	incrementGrade(void);
+		void	decrementGrade(void);
 
 		class GradeTooHighException : public std::exception {
 			public:
